@@ -1,0 +1,64 @@
+
+.accordion-container{
+  display: block;
+  width: 700px;
+  margin: auto;
+
+  .accordion-button{
+    display: block;
+    width: 700px;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    border-bottom: 1px #cccccc solid;
+    cursor: pointer;
+    transition: 1s;
+    height: 50px;
+
+    .cross{
+      width: 30px;
+      height: 30px;
+      background-image: url('https://cdn0.iconfinder.com/data/icons/feather/96/circle-cross-512.png');
+      background-size: cover;
+      transform: rotate(45deg);
+      transition: .5s ease-out;
+      position: absolute;
+      margin: 10px 10px;
+    }
+
+    .cross-active{
+      position: absolute;
+      margin: 56px 0 0 10px;
+      transform: rotate(0deg);
+      transition: .5s ease-out;
+      opacity: .4;
+    }
+
+    .active{
+      background: #bbb;
+      color: #fff;
+    }
+
+  }
+
+  .accordion-text-wrapper{
+    width: 700px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .6s ease-out;
+
+    .accordion-text{
+      font-size: 14px;
+      margin: 40px 10px 20px 10px;
+    }
+  }
+
+  .toggle{
+    max-height: 200px;
+  }
+}
+
+
+
+
+
